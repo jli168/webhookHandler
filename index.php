@@ -12,3 +12,7 @@ $postData = json_decode(file_get_contents('php://input'), true);
 
 $gitHookHandler = new GitHookHandler( $postData );
 
+$result = $gitHookHandler->handleData();
+
+var_dump($result);
+
